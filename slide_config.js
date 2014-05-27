@@ -1,8 +1,8 @@
 var SLIDE_CONFIG = {
   // Slide settings
   settings: {
-    title: 'git and github',
-    subtitle: 'work like a pro!<br>Tools seminar @ TU Berlin, February 25, 2013',
+    title: 'git and git<s> hub </s>lab',
+    subtitle: 'work like a pro!<br>reading grup @ MPI-csc, June 18, 2014',
     useBuilds: true, // Default: true. False will turn off slide animation builds.
     usePrettify: true, // Default: true
     enableSlideAreas: true, // Default: true. False turns off the click areas on either slide of the slides.
@@ -12,7 +12,7 @@ var SLIDE_CONFIG = {
       'Open Sans:regular,semibold,italic,italicsemibold',
       'Source Code Pro'
     ],
-    theme: ['matheon'], // Add your own custom themes or styles in /theme/css. Leave off the .css extension.
+    theme: ['mpcsc'], // Add your own custom themes or styles in /theme/css. Leave off the .css extension.
   },
 
   // Author information
@@ -25,7 +25,7 @@ var SLIDE_CONFIG = {
       },
       {
         name: 'Jan Heiland',
-        company: 'TU Berlin',
+        company: 'MPI Magdeburg',
         twitter: 'highlando',
         github: 'http://github.com/highlando'
       },
