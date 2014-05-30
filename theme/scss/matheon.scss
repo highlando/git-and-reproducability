@@ -1,0 +1,58 @@
+@import "compass/css3/background-size";
+@import "compass/css3/images"; // for 'background'
+
+$social-tags: 'Python in scientific computation';
+$brand-small-icon-size: 30px;
+
+$matheon-blue: rgb(38,89,166);
+//$matheon-blue: #2659A5;
+// 0b2268
+$matheon-blue-secondary2: #015cc8;
+
+blockquote {
+    margin-left: 2em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: smaller;
+    font-style: italic;
+}
+
+.screenshot {
+    margin-top: 0.5em;
+    text-align: center;
+}
+
+.blackhover {
+    //padding-left: 1em;
+    //background: rgba(0, 0, 0, 0.55);
+    text-shadow: 0px 0px 9px rgba(0, 0, 0, 1);
+}
+
+slides > slide {
+
+  font-family: 'UniversLTStd', 'Open Sans', Arial, sans-serif;
+  &:not(.nobackground) {
+    &:before {
+      content: $social-tags;
+      background: url(../../images/matheon-logo-color-30x30.png) no-repeat 0 50%;
+      @include background-size($brand-small-icon-size $brand-small-icon-size);
+    }
+  }
+  &.title-slide {
+    &:after {
+      // TODO Actually, the logo of the conference is supposed to go here.
+      background: url(../../images/pytub.svg) no-repeat 100% 50%;
+      @include background-size(contain);
+    }
+  }
+}
+
+table {
+  th {
+    @include background(linear-gradient(top, $matheon-blue 40%, $matheon-blue-secondary2 80%) no-repeat);
+  }
+}
+
+.thank-you-slide {
+  background: $matheon-blue !important;
+}
