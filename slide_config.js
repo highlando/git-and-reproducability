@@ -2,7 +2,7 @@ var SLIDE_CONFIG = {
   // Slide settings
   settings: {
     title: 'git and git<s> hub </s>lab',
-    subtitle: 'work like a pro!<br>reading grup @ MPI-csc, June 18, 2014',
+    subtitle: 'work like a pro!<br>reading group @ MPI-csc, June 18, 2014',
     useBuilds: true, // Default: true. False will turn off slide animation builds.
     usePrettify: true, // Default: true
     enableSlideAreas: true, // Default: true. False turns off the click areas on either slide of the slides.
