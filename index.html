@@ -168,6 +168,9 @@ URL: https://code.google.com/p/io-2012-slides
             like, for example 
             <a href="https://github.com/andrenarchy/krypy">KryPy</a>.</p>
         </article>
+      <article>
+        <iframe src="http://matplotlib.org/gallery.html" ></iframe>
+      </article>
     </slide>
 
     <slide>
@@ -329,6 +332,81 @@ URL: https://code.google.com/p/io-2012-slides
         </article>
     </slide>
 
+  <slide class="fill nobackground" style="background-image: url(images/bull.jpg)">
+      <hgroup>
+        <h2 class="white">Quo vadis, scientific software?</h2>
+      </hgroup>
+    <article class="flexbox vleft auto-fadein">
+        <div class="white">
+        <q>[...] codes themselves are rarely published. This is the equivalent of publishing a theorem and claiming that a proof exists, but not including it in the paper. 
+        </q>
+        </div>
+        <div class="author white blackhover">
+          Wolfgang Bangerth / Timo Heister
+        </div>
+        <footer class="source">
+          <p>source quote: <a href="http://www.siam.org/news/news.php?id=2131">Quo vadis, scientific software - SIAM news January 2014</a></p>
+          <p>source picture: <a href="https://secure.flickr.com/photos/dvanzuijlekom/8523201244/">Dennis van Zuijlekom</a></p>
+        </footer>
+    </article>
+  </slide>
+	<slide>
+		<hgroup>
+			<h2>Publish your Code!</h2>
+		</hgroup>
+		<article>
+			<ul>
+				<li> "Publishing results but not the code is like publishing a theorem but not the proof"
+			<ul>
+				<li> cited from <a href="somewhere siam">[Bangerth/Heister '14]</a></li>	
+				<li>cf. also the story about Fermat's last theorem </li>
+</ul>	
+				<li> Others don't have to reinvent the wheel again and again</li>
+				<li> Grad students can quickly go beyond Laplace's equation on the unit circle</li>
+				<li>People may improve your work</li>
+			</ul>
+		</article>
+	</slide>
+
+	<slide>
+		<hgroup>
+			<h2>What Git[lab, hub] can do for you!</h2>
+		</hgroup>
+		<article>
+	<h3> Save and tag the working version </h3>	
+            <pre class="prettyprint">
+	git commit -am 'Final version for published results'
+	git tag ...
+	git push --tags
+			</pre>
+			and make it available for easy download.
+		</article>
+		<article>
+			<h3>But there is more...</h3>	
+		</article>	
+	</slide>
+
+	<slide>
+		<hgroup>
+			<h2>Make your Code reusable!</h2>
+		</hgroup>
+		<article>
+			<h3>Accessible</h3>	
+			<ul>
+				<li> See the previous slide 
+			</ul>
+			<h3>Executable</h3>	
+			<ul>
+				<li>Include or at least name the dependencies</li>
+			</ul>
+			<h3>Usable</h3>	
+			<ul>
+				<li>Document the code</li>
+				<li>Provide a script that reproduces published results</li>
+			</ul>
+		</article>
+	</slide>
+
     <slide class="thank-you-slide segue nobackground">
         <aside class="gdbar right"><img src="images/mpil.svg"></aside>
         <article class="flexbox vleft auto-fadein">
@@ -336,9 +414,9 @@ URL: https://code.google.com/p/io-2012-slides
             <p>Questions?</p>
         </article>
         <p class="auto-fadein" data-config-contact>
-        <!-- populated from slide_config.json -->
-        </p>
-    </slide>
+		<!-- populated from slide_config.json -->
+		</p>
+	</slide>
 
     <slide class="dark nobackground">
         <article class="flexbox vcenter">
@@ -347,7 +425,7 @@ URL: https://code.google.com/p/io-2012-slides
         </article>
     </slide>
 
-    <slide class="backdrop"></slide>
+	<slide class="backdrop"></slide>
 
 </slides>
 
