@@ -105,27 +105,45 @@ URL: https://code.google.com/p/io-2012-slides
         </article>
     </slide>
 
+	<slide>
+		<hgroup>
+			<h2>What git[-hub, -lab, ...] does</h2>
+		</hgroup>
+		<article>
+			<ul>
+				<li>Saves lots of <em>previous versions</em> of your work</li>
+				<li>Manages them smartly (and lets you do extra tricks)</li>
+				<li>Lets you share a <em>current working version</em> with your collaborators</li>
+				<li>or synchronize your work on your working places</li>
+				<li>Different people can work on the same file seamlessly</li>
+			</ul>
+			<p>No need to bounce "here's the new version" e-mail messages and
+			combine files manually (with the risk of losing your work)</p>
+		</article>
+    </slide>
+
     <slide>
         <hgroup>
             <h2>What git[-hub, -lab, ...] does</h2>
         </hgroup>
 	<article>
-	    <ul>
-		<li>Saves lots of <em>previous versions</em> of your work</li>
-		<li>Manages them smartly (and lets you do extra tricks)</li>
-		<li>Lets you share a <em>current working version</em> with your collaborators</li>
-		<li>or synchronize your work on your working places</li>
-		<li>Different people can work on the same file seamlessly</li>
-	    </ul>
 	    <p>No need to bounce "here's the new version" e-mail messages and
 	    combine files manually (with the risk of losing your work)</p>
 	    <p>What is needed is a server that hosts the database
 	    <ul>
-		<li>Try <a href=https://bitbucket.org>gitlab</a> - the csc internal server</li>
+		<li>Try <a href=https://gitlab.mpi-magdeburg.mpg.de/>gitlab</a> - the csc internal server</li>
 		<li>Try <a href=https://github.com>github</a> - a popular social website for open source projects that comes with lots of innovative features</li>
 		<li>Try <a href=https://bitbucket.org>bitbucket</a> - another popular service that offers private repositories</li>
 	    </ul>
 	    </p>
+        </article>
+    </slide>
+    <slide>
+        <hgroup>
+            <h2>Workflow</h2>
+        </hgroup>
+        <article>
+            <p><img src="images/workflow.svg" style="width: 100%;" /></p>
         </article>
     </slide>
 
@@ -150,14 +168,14 @@ URL: https://code.google.com/p/io-2012-slides
     	</article>
     </slide>
 
-    <slide>
+    <!-- <slide>
         <hgroup>
             <h2>Example on github</h2>
         </hgroup>
       <article>
-        <iframe src="http://github.com/andrenarchy/krypy/"></iframe>
+        <iframe src="http://janheiland.de"></iframe>
       </article>
-    </slide>
+	</slide> -->
 
     <slide>
         <hgroup>
@@ -165,13 +183,13 @@ URL: https://code.google.com/p/io-2012-slides
         </hgroup>
         <article>
             <ul>
-                <li>Upload ssh public key to github</li>
-                <li>Create a repository on github</li>
+                <li>Upload ssh public key to gitlab</li>
+                <li>Create a repository on gitlab</li>
                 <li>Clone the repository to your machine</li>
                 <li>Modify files, diff</li>
                 <li>Add files, commit</li>
                 <li>Push, pull</li>
-                <li>Watch commits, diffs on github</li>
+                <li>Watch commits, diffs on gitlab</li>
             </ul>
         </article>
     </slide>
@@ -245,8 +263,8 @@ URL: https://code.google.com/p/io-2012-slides
         <article>
             <table>
                 <tr>
-                    <td>pull changes from remote</td>
-                    <td><code>git pull</code></td>
+                    <td>overview of changes</td>
+                    <td><code>git status</code></td>
                 </tr>
                 <tr>
                     <td>show changes in all files</td>
@@ -255,10 +273,6 @@ URL: https://code.google.com/p/io-2012-slides
                 <tr>
                     <td>show changes in specified files</td>
                     <td><code>git diff paper.tex gmres.py</code></td>
-                </tr>
-                <tr>
-                    <td>overview of changes</td>
-                    <td><code>git status</code></td>
                 </tr>
                 <tr>
                     <td>add specified files for commit</td>
@@ -273,16 +287,12 @@ URL: https://code.google.com/p/io-2012-slides
                     <td><code>git commit -a</code></td>
                 </tr>
                 <tr>
+                    <td>pull changes from remote</td>
+                    <td><code>git pull</code></td>
+                </tr>
+                <tr>
                     <td>push commits to remote repo</td>
                     <td><code>git push</code></td>
-                </tr>
-                <tr>
-                    <td>show last commit messages</td>
-                    <td><code>git log</code></td>
-                </tr>
-                <tr>
-                    <td>revert a file to last commited state</td>
-                    <td><code>git checkout paper.tex</code></td>
                 </tr>
             </table>
         </article>
@@ -299,8 +309,12 @@ URL: https://code.google.com/p/io-2012-slides
                     <td><code>git commit -am 'message'</code></td>
                 </tr>
                 <tr>
-                    <td>HELP! show help for command CMD</td>
-                    <td><code>git CMD --help</code></td>
+                    <td>show last commit messages</td>
+                    <td><code>git log</code></td>
+                </tr>
+                <tr>
+                    <td>revert a file to last commited state</td>
+                    <td><code>git checkout paper.tex</code></td>
                 </tr>
                 <tr>
                     <td>list all branches</td>
@@ -313,6 +327,10 @@ URL: https://code.google.com/p/io-2012-slides
                 <tr>
                     <td>create version tag <em>release2.3</em></td>
                     <td><code>git tag release2.3</code></td>
+                </tr>
+                <tr>
+                    <td>HELP! show help for command CMD</td>
+                    <td><code>git CMD --help</code></td>
                 </tr>
             </table>
         </article>
@@ -342,11 +360,10 @@ URL: https://code.google.com/p/io-2012-slides
 		</hgroup>
 		<article>
 			<ul>
-				<li> "Publishing results but not the code is like publishing a theorem but not the proof"
-			<ul>
-				<li> cited from <a href="somewhere siam">[Bangerth/Heister '14]</a></li>	
-				<li>cf. also the story about Fermat's last theorem </li>
-</ul>	
+				<li> Publishing results but not the code is like publishing a theorem but not the proof
+				<ul>
+					<li>cf. the story about Fermat's last theorem </li>
+				</ul>	
 				<li> Others don't have to reinvent the wheel again and again</li>
 				<li> Grad students can quickly go beyond Laplace's equation on the unit circle</li>
 				<li>People may improve your work</li>
@@ -362,7 +379,7 @@ URL: https://code.google.com/p/io-2012-slides
 	<h3> Save and tag the working version </h3>	
             <pre class="prettyprint">
 	git commit -am 'Final version for published results'
-	git tag ...
+	git tag -a v1.4 -m 'version 1.4'
 	git push --tags
 			</pre>
 			and make it available for easy download.
@@ -383,12 +400,12 @@ URL: https://code.google.com/p/io-2012-slides
 			</ul>
 			<h3>Executable</h3>	
 			<ul>
-				<li>Include or at least name the dependencies</li>
+				<li>Name, or better include, all dependencies</li>
 			</ul>
 			<h3>Usable</h3>	
 			<ul>
+				<li><s>Provide</s> Use a script that reproduces published results</li>
 				<li>Document the code</li>
-				<li>Provide a script that reproduces published results</li>
 			</ul>
 		</article>
 	</slide>
